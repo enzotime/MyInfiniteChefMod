@@ -4,7 +4,7 @@
 addIngredient("tortilla_chip",{
     color:"#f2e06e", //red
     type:"potato_chip", //will inherit all properties of the 'fruit' ingredient
-    shape:"triangle_round"
+    shape:"triangle_round_ml"
 });
 
 // Add a detailed ingredient with custom Shape and other properties
