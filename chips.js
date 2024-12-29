@@ -1,13 +1,45 @@
 // More info about enabling, testing, and submitting mods: https://R74ncom.github.io/InfiniteChef-Mods/
 
-// Add a basic ingredient using the 'fruit' ingredient as a base
 addIngredient("tortilla_chip",{
-    color:"#f2e06e", //red
-    type:"potato_chip", //will inherit all properties of the 'fruit' ingredient
-    shape:"triangle_round_ml"
+    color:"#f2e06e",
+    type:"potato_chip",
+    brokenShape:"dots_some_flat",
+    shape:"triangle_round_ml",
+    reactions: {
+        cheese_powder: { set1:"dorito" }
+    }
 });
 
-// Add a detailed ingredient with custom Shape and other properties
+addIngredient("dorito",{
+    color:"#fa8513",
+    type:"potato_chip",
+    shape:"triangle_round_ml",
+    brokenShape:"dots_some_flat",
+    hidden:true
+});
+
+addIngredient("chicken_nugget",{
+    color:"#eb9628",
+    type:"potato_chip",
+    shape:"triangle_curved"
+});
+
+addIngredient("oreo",{
+    color:"#272425",
+    type:"cookie",
+    brokenShape:"squares_some",
+    shape:"disc"
+});
+
+addIngredient("mint_chocolate",{
+    color:"#65dcb4",
+    innerColor:"#6effac",
+    type:"chocolate",
+    brokenShape:"dots_some_flat",
+    shape:"rectangle"
+});
+
+
 // All Shape IDs can be found here: https://R74n.com/shapes/
 // A list of properties can be found at the top of: https://R74n.com/cook/foodData.js
 addIngredient("finished_apple",{ //ID should be lowercase with underscores
